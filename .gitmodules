@@ -28,3 +28,6 @@
 [submodule "leveldb"]
 	path = leveldb
 	url = https://github.com/google/leveldb.git
+[submodule "crossguid"]
+	path = crossguid
+	url = https://github.com/graeme-hill/crossguid.git
