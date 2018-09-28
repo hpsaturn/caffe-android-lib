@@ -42,7 +42,7 @@ case "$TARGET_ANDROID_ABI" in
     "armeabi-v7a")
         TOOLCHAIN=arm-linux-androideabi-4.9
         #ANDROID_ABI="armeabi-v7a-hard-softfp with NEON"
-        ANDROID_ABI="armeabi-v7a-hard-softfp with NEON"
+        ANDROID_ABI="armeabi-v7a"
         ;;
     "arm64-v8a")
         TOOLCHAIN=aarch64-linux-android-4.9
