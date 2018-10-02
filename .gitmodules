@@ -31,3 +31,6 @@
 [submodule "crossguid"]
 	path = crossguid
 	url = https://github.com/graeme-hill/crossguid.git
+[submodule "matrixio_protos"]
+	path = matrixio_protos
+	url = git@github.com:matrix-io/protocol-buffers.git
