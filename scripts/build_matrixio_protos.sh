@@ -20,9 +20,10 @@ cmake -DCMAKE_TOOLCHAIN_FILE="${PROJECT_DIR}/android-cmake/android.toolchain.cma
       -DCMAKE_BUILD_TYPE=Release \
       -DANDROID_ABI="${ANDROID_ABI}" \
       -DANDROID_NATIVE_API_LEVEL=21 \
-      -DPROTOBUF_LIBRARY=${PROTOBUF_DIR}/lib \
       -DPROTOBUF_INCLUDE_DIR=${PROTOBUF_DIR}/include \
-      -DPROTOC=/usr/bin/protoc \
+      -DPROTOBUF_LIBRARY=${PROTOBUF_DIR}/lib \
+      -DPROTOC=${INSTALL_DIR}/protobuf_host/bin/protoc \
+      -DProtoHeaders=${PROTOBUF_DIR}/include \
       -DCMAKE_INSTALL_PREFIX="${INSTALL_DIR}/${MATRIXIO_PROTOS_DIR}" \
       ..
 
