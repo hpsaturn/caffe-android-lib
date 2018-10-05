@@ -16,7 +16,7 @@ pushd "${ZEROMQ_BUILD_DIR}"
 
 cd $ZEROMQ
 
-export ANDROID_NDK_ROOT=/opt/android-ndk-r10e
+export ANDROID_NDK_ROOT=/opt/android-ndk/
 export TOOLCHAIN_NAME=arm-linux-androideabi-4.9
 export TOOLCHAIN_HOST=arm-linux-androideabi
 export TOOLCHAIN_PATH=${ANDROID_NDK_ROOT}/toolchains/${TOOLCHAIN_NAME}/prebuilt/linux-x86_64/bin
