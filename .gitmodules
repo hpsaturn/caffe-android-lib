@@ -34,3 +34,12 @@
 [submodule "matrixio_protos"]
 	path = matrixio_protos
 	url = git@github.com:matrix-io/protocol-buffers.git
+[submodule "matrix-malos-lib"]
+	path = matrix-malos-lib
+	url = git@github.com:matrix-io/matrix-malos-lib.git
+[submodule "zeromq3-x"]
+	path = zeromq3-x
+	url = https://github.com/zeromq/zeromq3-x.git
+[submodule "libzmq"]
+	path = libzmq
+	url = https://github.com/hpsaturn/libzmq.git
