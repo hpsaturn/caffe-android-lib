@@ -23,9 +23,9 @@ cmake -DCMAKE_TOOLCHAIN_FILE="${PROJECT_DIR}/android-cmake/android.toolchain.cma
       -DPROTOBUF_INCLUDE_DIR=${PROTOBUF_DIR}/include \
       -DPROTOBUF_LIBRARY=${PROTOBUF_DIR}/lib/libprotobuf.a \
       -DZMQ_LIB=${INSTALL_DIR}/libzmq/lib/libzmq.a \
-      -DZMQ_INCLUDE_DIRS=${INSTALL_DIR}/libzmq/include \
-      -DMATRIXIO_PROTOS=${INSTALL_DIR}/matrixio_protos/lib/libmatrixio_protos.a \
-      -DMATRIXIO_INCLUDE_DIRS=${INSTALL_DIR}/matrixio_protos/include \
+      -DZMQ_INCLUDE_DIR=${INSTALL_DIR}/libzmq/include \
+      -DMATRIX_PROTOS_LIB=${INSTALL_DIR}/matrixio_protos/lib/libmatrixio_protos.a \
+      -DMATRIX_PROTOS_INCLUDE_DIR=${INSTALL_DIR}/matrixio_protos/include \
       -DCMAKE_INSTALL_PREFIX="${INSTALL_DIR}/${MATRIX_MALOS_LIB_DIR}" \
       ..
 
