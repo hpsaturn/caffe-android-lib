@@ -33,7 +33,7 @@
 	url = https://github.com/graeme-hill/crossguid.git
 [submodule "matrixio_protos"]
 	path = matrixio_protos
-	url = git@github.com:matrix-io/protocol-buffers.git
+	url = https://github.com/matrix-io/protocol-buffers.git
 [submodule "matrix-malos-lib"]
 	path = matrix-malos-lib
 	url = https://github.com/matrix-io/matrix-malos-lib.git
