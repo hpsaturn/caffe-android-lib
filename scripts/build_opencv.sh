@@ -30,6 +30,15 @@ cmake -DCMAKE_BUILD_WITH_INSTALL_RPATH=ON \
       -D BUILD_PERF_TESTS=OFF \
       -D BUILD_TESTS=OFF \
       -DCMAKE_INSTALL_PREFIX="${INSTALL_DIR}/opencv" \
+      -D BUILD_PROTOBUF=OFF \
+      -D BUILD_opencv_dnn=ON \
+      -D PROTOBUF_UPDATE_FILES=ON \
+      -D ENABLE_CXX11=ON  \
+      -D CMAKE_CXX_FLAGS="-I${INSTALL_DIR}/protobuf/include" \
+      -D PROTOBUF_INCLUDE_DIR="${INSTALL_DIR}/protobuf/include" \
+      -D PROTOBUF_INCLUDE_DIRS="${INSTALL_DIR}/protobuf/include" \
+      -D PROTOBUF_PROTOC_EXECUTABLE="${INSTALL_DIR}/protobuf_host/bin/protoc" \
+      -D PROTOBUF_LIBRARY="${INSTALL_DIR}/protobuf/lib/libprotobuf.a" \
       ../..
 
 make -j"${N_JOBS}"
