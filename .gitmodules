@@ -1,9 +1,6 @@
 [submodule "OpenBLAS"]
 	path = OpenBLAS
 	url = https://github.com/xianyi/OpenBLAS.git
-[submodule "protobuf"]
-	path = protobuf
-	url = https://github.com/google/protobuf.git
 [submodule "opencv"]
 	path = opencv
 	url = https://github.com/Itseez/opencv.git
