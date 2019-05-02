@@ -19,6 +19,9 @@ cmake -DCMAKE_TOOLCHAIN_FILE="${PROJECT_DIR}/android-cmake/android.toolchain.cma
       -DANDROID_NATIVE_API_LEVEL=21 \
       -Dprotobuf_BUILD_PROTOC_BINARIES=OFF \
       -DCMAKE_INSTALL_PREFIX="${INSTALL_DIR}/grpc" \
+      -DHAVE_STD_REGEX=OFF \
+      -DHAVE_POSIX_REGEX=OFF \
+      -DHAVE_STEADY_CLOCK=OFF \
       -Dprotobuf_BUILD_TESTS=OFF \
       ..
 
