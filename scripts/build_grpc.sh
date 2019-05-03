@@ -24,9 +24,11 @@ cmake -DCMAKE_TOOLCHAIN_FILE="${PROJECT_DIR}/android-cmake/android.toolchain.cma
       -DHAVE_POSIX_REGEX=OFF \
       -DHAVE_STEADY_CLOCK=OFF \
       -DgRPC_PROTOBUF_PROVIDER=package \
+      -Dprotobuf_BUILD_TESTS=OFF \
       -DRPC_PROTOBUF_PACKAGE_TYPE=module \
       -DProtobuf_PROTOC_EXECUTABLE=/usr/local/bin/protoc \
       -DPROTOBUF_LIBRARY="${PROTOBUF_ROOT}/lib/libprotobuf.a" \
+      -DPROTOBUF_PROTOC_LIBRARY="${PROTOBUF_ROOT}/libprotoc.a" \
       -DPROTOBUF_INCLUDE_DIR="${PROTOBUF_ROOT}/include" \
       -Dprotobuf_BUILD_TESTS=OFF \
       ..

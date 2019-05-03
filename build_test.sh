@@ -7,6 +7,7 @@ set -eu
 
 pushd "${PROJECT_DIR}"
 
+#./scripts/build_protobuf.sh
 ./scripts/build_grpc.sh
 
 popd
