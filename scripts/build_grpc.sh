@@ -5,6 +5,7 @@ set -eu
 # shellcheck source=/dev/null
 . "$(dirname "$0")/../config.sh"
 
+PROTOBUF_ROOT=${PROJECT_DIR}/protobuf
 GRPC_ROOT=${PROJECT_DIR}/grpc
 BUILD_DIR=${GRPC_ROOT}/build
 
@@ -22,6 +23,11 @@ cmake -DCMAKE_TOOLCHAIN_FILE="${PROJECT_DIR}/android-cmake/android.toolchain.cma
       -DHAVE_STD_REGEX=OFF \
       -DHAVE_POSIX_REGEX=OFF \
       -DHAVE_STEADY_CLOCK=OFF \
+      -DgRPC_PROTOBUF_PROVIDER=package \
+      -DRPC_PROTOBUF_PACKAGE_TYPE=module \
+      -DProtobuf_PROTOC_EXECUTABLE=/usr/local/bin/protoc \
+      -DPROTOBUF_LIBRARY="${PROTOBUF_ROOT}/lib/libprotobuf.a" \
+      -DPROTOBUF_INCLUDE_DIR="${PROTOBUF_ROOT}/include" \
       -Dprotobuf_BUILD_TESTS=OFF \
       ..
 
